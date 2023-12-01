@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50pt;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    border-radius: 5pt;
+}
+
+.ladoEsquerdo {
+    color: white;
+    margin-top: 10pt;
+    margin-left: 10pt;
+}
+
+.links {
+    margin: 10pt;
+    margin-right: 10pt;
+    margin-top: 17pt;
+}
+
+a {
+    text-decoration: none;
+    margin: 35pt;
+    text-align: center;
+    background-color: white;
+    padding: 8pt;
+    border-radius: 10pt;
+}
+
+a:hover {
+    background-color: rgb(221, 184, 255);
+}
