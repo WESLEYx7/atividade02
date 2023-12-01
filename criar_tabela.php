@@ -33,9 +33,30 @@
         $conn->exec($sql);
         echo "Comando executado com sucesso";
 
+        header('Location: index.php');
+        
+
+        
+
         //Capturar qual erro com o exception do PDO e dizer o erro na tela
     } catch (PDOException $e) {
-        echo "Error..." . $e->getMessage();
+        echo "Há tabela já foi criada" . $e->getMessage();
+        header('Location: index.php');
     }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar tabela</title>
+</head>
+<body>
+    
+    <script>
+        window.alert('Tabela cadastrada com sucesso!')
+    </script>
+</body> 
+</html>

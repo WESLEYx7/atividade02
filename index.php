@@ -9,17 +9,23 @@
 <body>
     <header>
         <div class="ladoEsquerdo">
-            <h2>Logo</h2>
+            <h1>Home</h1>
         </div>
         <!-- Links para as páginas de cada etapa -->
         <div class="links">
-            <a href="./criar_tabela.php">Criar Tabela</a>
+            <a onclick="aviso()" id="criarTabela" href="./criar_tabela.php">Criar Tabela</a>
             <a href="./inserir.php">Inserir Dados</a>
             <a href="recuperar_dado.php">Listar Dados</a>
         </div>
     </header>
     
+    <script>
 
+        //Função criada para mostrar ao usuário que a tabela foi criada
+        function aviso () {
+            window.alert('Você já criou tabela')
+        }
+    </script>
 
 
 </body>

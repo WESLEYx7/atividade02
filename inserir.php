@@ -22,7 +22,7 @@
 
         //Executar o comando SQL
         $conn->exec($sql);
-        echo "Comando executado com sucesso";
+        //echo "Comando executado com sucesso";
 
         //Capturar exception de erro do PDO ou comandos sql no try
     } catch (PDOException $e) {
@@ -30,3 +30,37 @@
     }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Dados</title>
+    <link rel="stylesheet" href="./styles/styleInserir.css">
+</head>
+<body>
+<header>
+        <div class="ladoEsquerdo">
+            <h1>Inserir Dados</h1>
+        </div>
+
+        <!-- Links para as páginas de cada etapa -->
+        <div class="links">
+            <a href="./index.php">Home</a>
+            <a onclick="aviso()" id="criarTabela" href="./criar_tabela.php">Criar Tabela</a>
+            <a href="./inserir.php">Inserir Dados</a>
+            <a href="recuperar_dado.php">Listar Dados</a>
+        </div>
+    </header>
+
+    <div class="divPrincipal">
+        <form action="./inserir.php" method="post">
+        <h3>Insira seus dados</h3>
+            <input placeholder="Digite seu nome" type="text">
+            <input placeholder="Digite seu nome" type="text">
+        </form>
+    </div>
+    
+</body>
+</html>
