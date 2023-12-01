@@ -1,5 +1,6 @@
 <?php 
 
+    //Dados da conta de usuário do MySQl para ser passado como parâmetro
     $servidor = "localhost";
     $usuario = "aluno";
     $senha = "123";
